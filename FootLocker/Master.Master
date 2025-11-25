@@ -1,0 +1,330 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="FootLocker.Master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Foot Locker | Step Into Style</title>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        /* ========== GLOBAL STYLES ========== */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #111;
+            background-color: #fff;
+            line-height: 1.5;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* ========== HEADER ========== */
+        header {
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 50px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.9em;
+            letter-spacing: 1px;
+        }
+
+            .logo span {
+                color: #e30613;
+            }
+
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+
+            nav a {
+                color: #fff;
+                font-weight: 500;
+                transition: color 0.3s;
+            }
+
+                nav a:hover {
+                    color: #e30613;
+                }
+
+        .icons {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+            .icons input {
+                padding: 6px 10px;
+                border-radius: 5px;
+                border: none;
+                outline: none;
+            }
+
+            .icons img {
+                width: 22px;
+                filter: invert(1);
+                cursor: pointer;
+                transition: 0.3s;
+            }
+
+                .icons img:hover {
+                    filter: invert(62%) sepia(100%) saturate(7000%) hue-rotate(350deg);
+                }
+
+        /* ========== HERO SECTION ========== */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            background: linear-gradient(90deg, #f5f5f5 50%, #fff 50%);
+            padding: 70px 80px;
+        }
+
+        .hero-text {
+            max-width: 500px;
+            flex: 1 1 300px;
+        }
+
+            .hero-text h1 {
+                font-family: 'Oswald', sans-serif;
+                font-size: 3.2em;
+                margin-bottom: 20px;
+            }
+
+            .hero-text p {
+                font-size: 1.1em;
+                margin-bottom: 25px;
+                color: #333;
+            }
+
+        .btn {
+            background: #e30613;
+            color: #fff;
+            padding: 12px 28px;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+            .btn:hover {
+                background: #b3040f;
+            }
+
+        .hero img {
+            flex: 1 1 300px;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        /* ========== FEATURED PRODUCTS ========== */
+        section.products {
+            padding: 60px 80px;
+            text-align: center;
+        }
+
+            section.products h2 {
+                font-family: 'Oswald', sans-serif;
+                font-size: 2.3em;
+                margin-bottom: 40px;
+            }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .product {
+            border: 1px solid #eee;
+            border-radius: 10px;
+            padding: 20px;
+            transition: 0.3s;
+            background: #fff;
+        }
+
+            .product:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            }
+
+            .product img {
+                border-radius: 10px;
+                margin-bottom: 15px;
+            }
+
+            .product h3 {
+                font-size: 1.1em;
+                margin: 10px 0;
+            }
+
+            .product p {
+                font-weight: 600;
+                color: #e30613;
+            }
+
+        /* ========== FOOTER ========== */
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 50px 80px 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+        }
+
+            .footer-grid h4 {
+                font-family: 'Oswald', sans-serif;
+                margin-bottom: 10px;
+            }
+
+            .footer-grid a {
+                display: block;
+                color: #aaa;
+                margin: 6px 0;
+                transition: 0.3s;
+                font-size: 0.95em;
+            }
+
+                .footer-grid a:hover {
+                    color: #fff;
+                }
+
+        .socials img {
+            width: 22px;
+            margin-right: 10px;
+            filter: invert(1);
+            transition: 0.3s;
+        }
+
+            .socials img:hover {
+                filter: invert(62%) sepia(100%) saturate(7000%) hue-rotate(350deg);
+            }
+
+        .copyright {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* ========== RESPONSIVE DESIGN ========== */
+        @media (max-width: 900px) {
+            header {
+                flex-wrap: wrap;
+                padding: 15px 20px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 10px;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding: 50px 30px;
+            }
+
+                .hero img {
+                    margin-top: 20px;
+                }
+
+            section.products {
+                padding: 40px 20px;
+            }
+
+            footer {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <div class="logo"><span>
+                <asp:ImageButton ID="ImageButton1" runat="server" Height="92px" ImageUrl="~/images/logo.png" PostBackUrl="~/HomePg1.aspx" Width="118px" OnClick="ImageButton1_Click" /> </span></div>
+            <nav>
+                <a href="/HomePg1.aspx">Home</a>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Sale</a>
+                <a href="/SignIn1.aspx">SignIn</a>
+                <a href="/SignUp.aspx">SignUp</a>
+            </nav>
+            <div class="icons">
+                <input type="text" placeholder="Search sneakers...">
+                <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="User">
+                <img src="https://cdn-icons-png.flaticon.com/512/107/107831.png" alt="Cart">
+            </div>
+        </header>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <footer>
+            <div class="footer-grid">
+                <div>
+                    <h4>Customer Service</h4>
+                    <a href="#">Help</a>
+                    <a href="#">Returns</a>
+                    <a href="#">Shipping Info</a>
+                </div>
+                <div>
+                    <h4>About Foot Locker</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Find a Store</a>
+                </div>
+                <div>
+                    <h4>Follow Us</h4>
+                    <div class="socials">
+                        <a href="https://www.facebook.com/footlockerIL/">
+                            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/Footlocker.il/">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+                        <a href="https://x.com/footlocker">
+                            <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="X"></a>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">© 2025 Foot Locker.By HASAN.*</p>
+        </footer>
+
+    </form>
+</body>
+</html>

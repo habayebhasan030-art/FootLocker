@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfCityes">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Cityes" nillable="true" type="tns:Cityes" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCityes" nillable="true" type="tns:ArrayOfCityes" />
+  <xs:complexType name="Cityes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CityId" type="xs:int" />
+      <xs:element minOccurs="0" name="CityName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Cityes" nillable="true" type="tns:Cityes" />
+  <xs:complexType name="ArrayOfUsers">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Users" nillable="true" type="tns:Users" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUsers" nillable="true" type="tns:ArrayOfUsers" />
+  <xs:complexType name="Users">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="City" nillable="true" type="tns:Cityes" />
+      <xs:element minOccurs="0" name="FName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UEmail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UPassword" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Uanswer" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Ubirthday" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Ugender" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Uquestion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UteInum" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Users" nillable="true" type="tns:Users" />
+  <xs:complexType name="ArrayOfMailbox">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Mailbox" nillable="true" type="tns:Mailbox" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMailbox" nillable="true" type="tns:ArrayOfMailbox" />
+  <xs:complexType name="Mailbox">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="MsgBody" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MsgDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MsgRead" type="xs:boolean" />
+      <xs:element minOccurs="0" name="MsgSubject" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecieverEmaill" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderEmail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderFname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderLname" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Mailbox" nillable="true" type="tns:Mailbox" />
+  <xs:complexType name="ArrayOfItems">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Items" nillable="true" type="tns:Items" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfItems" nillable="true" type="tns:ArrayOfItems" />
+  <xs:complexType name="Items">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ItemCode" type="xs:int" />
+      <xs:element minOccurs="0" name="ItemImg" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Price" type="xs:double" />
+      <xs:element minOccurs="0" name="Quantity" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Items" nillable="true" type="tns:Items" />
+  <xs:complexType name="ArrayOfOrder">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Order" nillable="true" type="tns:Order" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrder" nillable="true" type="tns:ArrayOfOrder" />
+  <xs:complexType name="Order">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ItemId" type="xs:int" />
+      <xs:element minOccurs="0" name="OrderDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrderStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Price" type="xs:double" />
+      <xs:element minOccurs="0" name="Qnty" type="xs:int" />
+      <xs:element minOccurs="0" name="Uemail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VisaNumber" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Order" nillable="true" type="tns:Order" />
+  <xs:complexType name="Visa">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Accountno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cash" type="xs:double" />
+      <xs:element minOccurs="0" name="Credit" type="xs:double" />
+      <xs:element minOccurs="0" name="ExpDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VisaType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Visano" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="uEmail" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Visa" nillable="true" type="tns:Visa" />
+  <xs:complexType name="ArrayOfVisa">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Visa" nillable="true" type="tns:Visa" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVisa" nillable="true" type="tns:ArrayOfVisa" />
+</xs:schema>
