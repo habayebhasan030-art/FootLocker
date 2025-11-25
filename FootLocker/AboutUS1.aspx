@@ -116,7 +116,7 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h1> About us 2</h1>
+    
     <!-- HERO SECTION -->
     <div class="hero">
         <div class="hero-overlay"></div>
