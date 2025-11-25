@@ -17,22 +17,22 @@
     <h2>Featured Sneakers</h2>
     <div class="product-grid">
       <div class="product">
-        <img src="<img src="https://images/Screenshot%202025-11-19%20104209.png"/>
+        <img  src="..\images\Screenshot 2025-11-19 104209.png" alt="Shoes1" />
         <h3>Nike Air Max 270</h3>
         <p>$150</p>
       </div>
       <div class="product">
-        <img src="https://images.unsplash.com/photo-1589187155479-11b7b45b13c8?auto=format&fit=crop&w=600&q=80" alt="Yeezy Boost 350">
+        <img src="images/Screenshot%202025-11-25%20124133.png"alt="Yeezy Boost 350" />
         <h3>Adidas Yeezy Boost 350</h3>
         <p>$220</p>
       </div>
       <div class="product">
-        <img src="https://images.unsplash.com/photo-1618354691541-2d55c5e7a2d2?auto=format&fit=crop&w=600&q=80" alt="Jordan 1">
+        <img src="images/Screenshot%202025-11-25%20124532.png" alt="Jordan 1"/>
         <h3>Air Jordan 1 Retro</h3>
         <p>$180</p>
       </div>
       <div class="product">
-        <img src="https://images.unsplash.com/photo-1600185365483-26d7f5f8cfb9?auto=format&fit=crop&w=600&q=80" alt="Puma RS-X">
+        <img src="images/Screenshot%202025-11-25%20125149.png" alt="Puma RS-X"/>
         <h3>Puma RS-X³ Puzzle</h3>
         <p>$130</p>
       </div>

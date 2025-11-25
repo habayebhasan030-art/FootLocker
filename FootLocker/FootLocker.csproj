@@ -70,6 +70,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AboutUS1.aspx" />
+    <Content Include="images\Screenshot 2025-11-25 130328.png" />
+    <Content Include="Kids.aspx" />
     <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
     <None Include="Connected Services\ServiceReference1\configuration.svcinfo" />
     <Content Include="Connected Services\ServiceReference1\FootLocker.ServiceReference1.Cityes.datasource">
@@ -99,6 +101,9 @@
     <Content Include="images\logo.png" />
     <Content Include="images\Screenshot 2025-11-19 103012.png" />
     <Content Include="images\Screenshot 2025-11-19 104209.png" />
+    <Content Include="images\Screenshot 2025-11-25 124133.png" />
+    <Content Include="images\Screenshot 2025-11-25 124532.png" />
+    <Content Include="images\Screenshot 2025-11-25 125149.png" />
     <Content Include="SignIn1.aspx" />
     <Content Include="SignUp.aspx" />
     <Content Include="Web.config" />
@@ -151,6 +156,13 @@
     </Compile>
     <Compile Include="SignUp.aspx.designer.cs">
       <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kids.aspx.cs">
+      <DependentUpon>Kids.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kids.aspx.designer.cs">
+      <DependentUpon>Kids.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

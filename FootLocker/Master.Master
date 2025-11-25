@@ -282,10 +282,11 @@
                 <a href="/HomePg1.aspx">Home</a>
                 <a href="#">Men</a>
                 <a href="#">Women</a>
-                <a href="#">Kids</a>
+                <a href="Kids.aspx">Kids</a>
                 <a href="#">Sale</a>
                 <a href="/SignIn1.aspx">SignIn</a>
                 <a href="/SignUp.aspx">SignUp</a>
+                <a href="AboutUS1.aspx">AbutUs</a>
             </nav>
             <div class="icons">
                 <input type="text" placeholder="Search sneakers...">
