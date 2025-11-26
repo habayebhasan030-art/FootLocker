@@ -176,7 +176,7 @@
 
             <tr>
                 <td colspan="3" style="text-align:center; padding-top:20px;">
-                    <asp:Button ID="btnRegister" runat="server" CssClass="btn-register" Text="Register" ValidationGroup="SignUp" />
+                    <asp:Button ID="btnRegister" runat="server" CssClass="btn-register" Text="Register" ValidationGroup="SignUp" OnClick="btnRegister_Click" />
                 </td>
             </tr>
 
