@@ -280,9 +280,9 @@
                 <asp:ImageButton ID="ImageButton1" runat="server" Height="92px" ImageUrl="~/images/logo.png" PostBackUrl="~/HomePg1.aspx" Width="118px" OnClick="ImageButton1_Click" /> </span></div>
             <nav>
                 <a href="/HomePg1.aspx">Home</a>
-                <a href="#">Men</a>
+                <a href="men.aspx">Men</a>
                 <a href="#">Women</a>
-                <a href="Kids.aspx">Kids</a>
+              
                 <a href="#">Sale</a>
                 <a href="/SignIn1.aspx">SignIn</a>
                 <a href="/SignUp.aspx">SignUp</a>
