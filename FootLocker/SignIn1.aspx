@@ -111,6 +111,7 @@
             <a href="Register.aspx">Create New Account</a>
             <br />
             <a href="ForgetPass.aspx">Forgot Password?</a>
+            <asp:Label ID="lblInfo" runat="server"></asp:Label>
         </div>
 
     </div>
