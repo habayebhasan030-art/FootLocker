@@ -11,7 +11,7 @@ namespace FootLocker
 {
 
 
-    public partial class SignUp
+    public partial class Register
     {
 
         /// <summary>
