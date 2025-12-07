@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Forget Password" Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="ForgetPass.aspx.cs" Inherits="FootLocker.ForgetPass" %>
+﻿<%@ Page Title="Forget Password" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="ForgetPass.aspx.cs" Inherits="FootLocker.ForgetPass" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>

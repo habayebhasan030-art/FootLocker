@@ -1,4 +1,4 @@
-﻿<%@ Page Title="About Us - FootLocker" Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="AboutUS1.aspx.cs" Inherits="FootLocker.WebForm1" %>
+﻿<%@ Page Title="About Us - FootLocker" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="AboutUS1.aspx.cs" Inherits="FootLocker.WebForm1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>

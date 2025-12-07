@@ -1,5 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="FootLocker.Register" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="FootLocker.SignUp" %>
+    <asp:Content ID="Content3" ContentPlaceHolderID="head" runat="server">
     
     <style>
         .register-container {
@@ -74,7 +74,9 @@
         }
     </style>
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+
+    <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
   
 
 
@@ -162,17 +164,20 @@
 
             <tr>
                 <td>Birthday</td>
-                <td><asp:TextBox ID="txtBirthday" runat="server" placeholder="YYYY-MM-DD" /></td>
+                <td>
+                    <asp:DropDownList ID="ddlDay" runat="server">
+                    </asp:DropDownList>
+                    <asp:DropDownList ID="ddlMonth" runat="server">
+                    </asp:DropDownList>
+                    <asp:DropDownList ID="ddlYear" runat="server">
+                    </asp:DropDownList>
+                </td>
             </tr>
 
             <tr>
                 <td>City</td>
                 <td>
                     <asp:DropDownList ID="ddlCity" runat="server">
-                        <asp:ListItem>Unbound</asp:ListItem>
-                        <asp:ListItem>New York</asp:ListItem>
-                        <asp:ListItem>Los Angeles</asp:ListItem>
-                        <asp:ListItem>Chicago</asp:ListItem>
                     </asp:DropDownList>
                 </td>
             </tr>
@@ -180,11 +185,14 @@
             <tr>
                 <td colspan="3" style="text-align:center; padding-top:20px;">
                     <asp:Button ID="btnRegister" runat="server" CssClass="btn-register" Text="Register" ValidationGroup="SignUp" OnClick="btnRegister_Click" />
+                &nbsp;<br />
+                    <br />
+                    <asp:Label ID="lblMsg" runat="server"></asp:Label>
                 </td>
             </tr>
 
         </table>
     </div>
 
-</asp:Content>
 
+</asp:Content>

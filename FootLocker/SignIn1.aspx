@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Sign In" Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="SignIn1.aspx.cs" Inherits="FootLocker.SignIn1" %>
+﻿<%@ Page Title="Sign In" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="SignIn1.aspx.cs" Inherits="FootLocker.SignIn1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>

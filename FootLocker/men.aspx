@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Men - Foot Locker" Language="C#" MasterPageFile="~/Master.Master"
+﻿<%@ Page Title="Men - Foot Locker" Language="C#" MasterPageFile="~/Site1.Master"
     AutoEventWireup="true" Inherits="FootLocker.man" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
