@@ -5,11 +5,12 @@ using System.ServiceModel.Security;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-
+using FootLocker.ServiceReference1;
 namespace FootLocker
 {
     public partial class ForgetPass : System.Web.UI.Page
     {
+        Service1Client seserv = new Service1Client();
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -19,14 +20,14 @@ namespace FootLocker
         protected void btnCheck_Click(object sender, EventArgs e)
         {
             string uEmail =this.txtEmail.Text;
-            if (seserv.CheckUserExistByEmail(uEmail))
+            if ( seserv.CheckUserExistByEmail(uEmail))
             {
                 this.btnCheck.Visible = false;
                 this.txtQuestion.Visible = true ; 
                 this.lblInfo.Visible = true;
                 this.lblInfo.Text = "";
                 this.txtAnswer.Visible = true;
-                this.txtQuestion.Text=seserv.GetQuestion(uEmail);
+                this.txtQuestion.Text = seserv.GetQuestion(uEmail);
                 this.btnRecovery.Visible = true;
                 
             }
@@ -42,14 +43,14 @@ namespace FootLocker
         protected void btnRecovery_Click(object sender, EventArgs e)
         {
             string Uemail=this.txtEmail.Text;
-            string pass=seserv.passRecovery(Uemail,txtAnswer.Text);
+            string pass = seserv.PassRecovery(Uemail,txtAnswer.Text);
             if(pass.Length > 0)
             {
                 lblInfo.Text="your password = "+pass;
             }
             else
             {
-                lblInfo.Text = "Try6 Again plz!!";
+                lblInfo.Text = "Try Again plz!!";
             }
 
 
