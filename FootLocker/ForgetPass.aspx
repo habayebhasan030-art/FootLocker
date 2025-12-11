@@ -29,6 +29,7 @@
         label {
             color: #fff;
             font-size: 16px;
+            text-align: center;
         }
 
         .txt {
@@ -85,16 +86,17 @@
         <asp:TextBox ID="txtEmail" runat="server" CssClass="txt" placeholder="Enter your email"></asp:TextBox>
 
         <asp:Button ID="btnCheck" runat="server" Text="Check" CssClass="btn" OnClick="btnCheck_Click" />
+        <br />
+        <asp:Label ID="lblQuestion" runat="server" Text=" Password Question" ForeColor="White" Visible="False"></asp:Label>
+        <br />
+        <br />
 
-        <label>Password Question</label>
-        <asp:TextBox ID="txtQuestion" runat="server" CssClass="txt" ReadOnly="true"></asp:TextBox>
+        <asp:Label ID="lblAnswer" runat="server" Text="Write Your Answer Here" ForeColor="White" Visible="False"></asp:Label>
+        <asp:TextBox ID="txtAnswer" runat="server" CssClass="txt" placeholder="Enter your answer" Visible="False"></asp:TextBox>
 
-        <label>Write Your Answer Here</label>
-        <asp:TextBox ID="txtAnswer" runat="server" CssClass="txt" placeholder="Enter your answer"></asp:TextBox>
-
-        <asp:Button ID="btnRecovery" runat="server" Text="Recovery" CssClass="btn" OnClick="btnRecovery_Click" />
-
-        <asp:Label ID="lblInfo" runat="server"></asp:Label>
+        <asp:Button ID="btnRecovery" runat="server" Text="Recovery" CssClass="btn" OnClick="btnRecovery_Click" Visible="False" />
+        <br /> 
+        <asp:Label ID="lblInfo" runat="server" ForeColor="White"></asp:Label>
 
     </div>
 

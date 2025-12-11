@@ -23,11 +23,12 @@ namespace FootLocker
             if ( seserv.CheckUserExistByEmail(uEmail))
             {
                 this.btnCheck.Visible = false;
-                this.txtQuestion.Visible = true ; 
+                this.lblAnswer.Visible = true;
                 this.lblInfo.Visible = true;
                 this.lblInfo.Text = "";
                 this.txtAnswer.Visible = true;
-                this.txtQuestion.Text = seserv.GetQuestion(uEmail);
+              this.lblQuestion.Visible = true;
+                this.lblQuestion.Text =seserv.GetQuestion(uEmail);
                 this.btnRecovery.Visible = true;
                 
             }
@@ -42,9 +43,9 @@ namespace FootLocker
 
         protected void btnRecovery_Click(object sender, EventArgs e)
         {
-            string Uemail=this.txtEmail.Text;
-            string pass = seserv.PassRecovery(Uemail,txtAnswer.Text);
-            if(pass.Length > 0)
+            string Uemail = this.txtEmail.Text;
+            string pass = seserv.PassRecovery(Uemail, txtAnswer.Text);
+            if (pass.Length > 0)
             {
                 lblInfo.Text="your password = "+pass;
             }
