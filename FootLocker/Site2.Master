@@ -1,0 +1,148 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.Master.cs" Inherits="FootLocker.Master" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <title>Foot Locker</title>
+
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #121212; /* dark app-like background */
+            color: #fff;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background-color: #1a1a1a;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 50px;
+            box-shadow: 0 4px 25px rgba(0,0,0,0.7);
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 900;
+            letter-spacing: 3px;
+            color: #e10600;
+            text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            display: inline-block;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            padding: 10px 16px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        /* Hover effect with glowing red underline */
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0;
+            height: 3px;
+            background-color: #e10600;
+            box-shadow: 0 0 8px #e10600;
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links a:hover {
+            background-color: rgba(225,6,0,0.1);
+        }
+
+        /* Logout button */
+        .logout {
+            background-color: #e10600;
+            color: #fff;
+            font-weight: 700;
+            padding: 10px 20px;
+            border-radius: 30px;
+            box-shadow: 0 4px 15px rgba(225,6,0,0.5);
+            transition: all 0.3s ease;
+        }
+
+        .logout:hover {
+            background-color: #c00000;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(225,6,0,0.7);
+        }
+
+        /* Content */
+        .content {
+            padding: 30px 50px;
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 900px) {
+            .navbar {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<form runat="server">
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">FOOT LOCKER</div>
+
+        <ul class="nav-links">
+            <li><a href="Home.aspx">Home</a></li>
+            <li><a href="About.aspx">About Us</a></li>
+            <li><a href="Products.aspx">Products / Categories</a></li>
+            <li><a href="Cart.aspx">My Cart</a></li>
+            <li><a href="Orders.aspx">My Orders</a></li>
+            <li><a href="Favorite.aspx">My Favorite</a></li>
+            <li><a href="Messages.aspx">My Messages</a></li>
+            <li><a href="Contact.aspx">Contact Us</a></li>
+            <li><a href="Logout.aspx" class="logout">Log Out</a></li>
+        </ul>
+    </nav>
+
+    <!-- PAGE CONTENT -->
+    <div class="content">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+    </div>
+
+</form>
+</body>
+</html>
