@@ -109,6 +109,7 @@
     <Content Include="men.aspx" />
     <Content Include="SignIn1.aspx" />
     <Content Include="SignUp.aspx" />
+    <Content Include="Userprofail2.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -201,6 +202,13 @@
     </Compile>
     <Compile Include="Site2.Master.designer.cs">
       <DependentUpon>Site2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Userprofail2.aspx.cs">
+      <DependentUpon>Userprofail2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Userprofail2.aspx.designer.cs">
+      <DependentUpon>Userprofail2.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
