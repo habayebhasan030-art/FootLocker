@@ -30,7 +30,7 @@ namespace FootLocker
             {
                 Session["uEmail"] = uEmail;
                 Session["uPassw"] = Upassword;
-                Response.Redirect("~/MainPage.aspx");
+                Response.Redirect("~/home2.aspx");
 
             }
             else

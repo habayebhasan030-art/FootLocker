@@ -55,7 +55,7 @@ namespace FootLocker
             string month = ddlMonth.SelectedValue;
             string year = ddlYear.SelectedValue;
             string cityname = ddlCity.SelectedItem.Text;
-            string question = this.ddlDay.SelectedItem.Text;
+            string question = this.ddlQuestion.SelectedItem.Text;
             string answer = this.txtAnswer.Text;
 
             c = seserv.SelectCityByName(cityname);
@@ -77,7 +77,9 @@ namespace FootLocker
             else
             {
                 if (seserv.AddUser(us) > 0)
-                    lblMsg.Text = "Welcome to my website";
+                {
+                    Response.Redirect("SignIn1.aspx");
+                }
                 else
                     lblMsg.Text = "Wrong Data";
             }

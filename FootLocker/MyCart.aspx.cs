@@ -7,14 +7,9 @@ using System.Web.UI.WebControls;
 
 namespace FootLocker
 {
-    public partial class DeleteAccount : System.Web.UI.Page
+    public partial class MyCart : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void btnDelete_Click(object sender, EventArgs e)
         {
 
         }

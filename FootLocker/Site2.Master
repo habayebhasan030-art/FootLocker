@@ -126,15 +126,15 @@
         <div class="logo">FOOT LOCKER</div>
 
         <ul class="nav-links">
-            <li><a href="Home.aspx">Home</a></li>
-            <li><a href="About.aspx">About Us</a></li>
+            <li><a href="Home2.aspx">Home</a></li>
+            <li><a href="AboutUs2.aspx">About Us</a></li>
             <li><a href="Products.aspx">Products / Categories</a></li>
             <li><a href="Cart.aspx">My Cart</a></li>
             <li><a href="Orders.aspx">My Orders</a></li>
             <li><a href="Favorite.aspx">My Favorite</a></li>
             <li><a href="Messages.aspx">My Messages</a></li>
-            <li><a href="Contact.aspx">Contact Us</a></li>
-            <li><a href="Logout.aspx" class="logout">Log Out</a></li>
+            <li><a href="contactUs.aspx">Contact Us</a></li>
+            <li><a href="HomePg1.aspx" class="logout">Log Out</a></li>
         </ul>
     </nav>
 
@@ -142,7 +142,6 @@
     <div class="content">
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
     </div>
-
 </form>
 </body>
 </html>
