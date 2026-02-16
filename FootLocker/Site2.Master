@@ -11,7 +11,7 @@
         body {
             margin: 0;
             font-family: 'Segoe UI', Arial, sans-serif;
-            background-color: #121212; /* dark app-like background */
+            background-color: #121212;
             color: #fff;
         }
 
@@ -28,14 +28,21 @@
             z-index: 999;
         }
 
+        /* LOGO */
         .logo {
             font-size: 28px;
             font-weight: 900;
             letter-spacing: 3px;
             color: #e10600;
-            text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+            text-decoration: none; /* إزالة underline */
+            transition: 0.3s;
         }
 
+        .logo:hover {
+            color: #ff3333;
+        }
+
+        /* NAV LINKS */
         .nav-links {
             list-style: none;
             display: flex;
@@ -45,10 +52,6 @@
             padding: 0;
         }
 
-        .nav-links li {
-            display: inline-block;
-        }
-
         .nav-links a {
             color: #fff;
             text-decoration: none;
@@ -56,54 +59,32 @@
             font-weight: 600;
             padding: 10px 16px;
             border-radius: 8px;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-
-        /* Hover effect with glowing red underline */
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -5px;
-            width: 0;
-            height: 3px;
-            background-color: #e10600;
-            box-shadow: 0 0 8px #e10600;
-            transition: width 0.3s ease;
-        }
-
-        .nav-links a:hover::after {
-            width: 100%;
+            transition: 0.3s;
         }
 
         .nav-links a:hover {
             background-color: rgba(225,6,0,0.1);
+            color: #e10600;
         }
 
-        /* Logout button */
+        /* LOGOUT BUTTON */
         .logout {
             background-color: #e10600;
-            color: #fff;
-            font-weight: 700;
             padding: 10px 20px;
             border-radius: 30px;
-            box-shadow: 0 4px 15px rgba(225,6,0,0.5);
-            transition: all 0.3s ease;
+            font-weight: 700;
         }
 
         .logout:hover {
             background-color: #c00000;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(225,6,0,0.7);
         }
 
-        /* Content */
+        /* CONTENT AREA */
         .content {
             padding: 30px 50px;
         }
 
-        /* Responsive */
+        /* RESPONSIVE */
         @media screen and (max-width: 900px) {
             .navbar {
                 flex-direction: column;
@@ -123,7 +104,8 @@
 
     <!-- NAVBAR -->
     <nav class="navbar">
-        <div class="logo">FOOT LOCKER</div>
+        <!-- Logo يضغط المستخدم ويذهب مباشرة إلى Home2.aspx -->
+        <a href="Home2.aspx" class="logo">FOOT LOCKER</a>
 
         <ul class="nav-links">
             <li><a href="Home2.aspx">Home</a></li>
@@ -132,7 +114,7 @@
             <li><a href="Cart.aspx">My Cart</a></li>
             <li><a href="Orders.aspx">My Orders</a></li>
             <li><a href="Favorite.aspx">My Favorite</a></li>
-            <li><a href="Messages.aspx">My Messages</a></li>
+            <li><a href="MyMassegs.aspx">My Messages</a></li>
             <li><a href="contactUs.aspx">Contact Us</a></li>
             <li><a href="HomePg1.aspx" class="logout">Log Out</a></li>
         </ul>
@@ -142,6 +124,7 @@
     <div class="content">
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
     </div>
+
 </form>
 </body>
 </html>

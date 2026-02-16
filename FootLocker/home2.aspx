@@ -37,6 +37,10 @@
             font-weight: 900;
         }
 
+        .hero-text h1 span {
+            color: #ff0000;
+        }
+
         .hero-text p {
             font-size: 1.1rem;
             color: #aaa;
@@ -123,7 +127,7 @@
             box-shadow: 0 10px 40px rgba(255,0,0,0.15);
         }
 
-        .product img {
+        .product img, .product-item__secondary-image {
             width: 100%;
             height: 180px;
             object-fit: contain;
@@ -131,7 +135,7 @@
             transition: 0.5s;
         }
 
-        .product:hover img {
+        .product:hover img, .product:hover .product-item__secondary-image {
             transform: scale(1.15);
         }
 
@@ -161,6 +165,8 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-text">
             <h1>Step Into <br /><span>Style</span></h1>
@@ -172,28 +178,42 @@
         </div>
     </section>
 
+    <!-- Products Section -->
     <section class="products">
         <h2>Featured <span>Sneakers</span></h2>
         <div class="product-grid">
             
+            <!-- منتج 1 - Air Force 1 -->
+            <div class="product">
+                <img src="//footlocker.co.il/cdn/shop/files/Footlocker_AIR_FORCE_1_07_-_-3661076.jpg?v=1733842953&width=1000" 
+                     alt="AIR FORCE 1 07 | FOOT LOCKER" 
+                     class="product-item__secondary-image" />
+                <h3>Nike Air Force 1 07</h3>
+                <p>$120</p>
+            </div>
+
+            <!-- منتج 2 -->
             <div class="product">
                 <img src="../images/Screenshot 2025-11-19 104209.png" alt="Nike Air Max 270" />
                 <h3>Nike Air Max 270</h3>
                 <p>$150</p>
             </div>
 
+            <!-- منتج 3 -->
             <div class="product">
                 <img src="images/Screenshot%202025-11-25%20124133.png" alt="Yeezy Boost 350" />
                 <h3>Adidas Yeezy Boost 350</h3>
                 <p>$220</p>
             </div>
 
+            <!-- منتج 4 -->
             <div class="product">
                 <img src="images/Screenshot%202025-11-25%20124532.png" alt="Air Jordan 1" />
                 <h3>Air Jordan 1 Retro</h3>
                 <p>$180</p>
             </div>
 
+            <!-- منتج 5 -->
             <div class="product">
                 <img src="images/Screenshot%202025-11-25%20125149.png" alt="Puma RS-X" />
                 <h3>Puma RS-X³ Puzzle</h3>
@@ -202,5 +222,5 @@
 
         </div>
     </section>
-</asp:Content>
 
+</asp:Content>
