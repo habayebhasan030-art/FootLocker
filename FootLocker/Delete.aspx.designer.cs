@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Sally_sPerfumeClients
+namespace FootLocker
 {
 
 
-    public partial class DeLaccount
+    public partial class Delete
     {
 
         /// <summary>
@@ -51,13 +51,13 @@ namespace Sally_sPerfumeClients
         protected global::System.Web.UI.WebControls.Label lblSure;
 
         /// <summary>
-        /// btnYes control.
+        /// yesbtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnYes;
+        protected global::System.Web.UI.WebControls.Button yesbtn;
 
         /// <summary>
         /// btnNo control.

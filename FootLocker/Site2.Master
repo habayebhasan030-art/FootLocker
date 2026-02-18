@@ -117,6 +117,7 @@
             <li><a href="MyMassegs.aspx">My Messages</a></li>
             <li><a href="contactUs.aspx">Contact Us</a></li>
             <li><a href="HomePg1.aspx" class="logout">Log Out</a></li>
+             <li><a href="DeleteAccount.aspx">DeleteAccount</a></li>
         </ul>
     </nav>
 

@@ -72,6 +72,7 @@
     <Content Include="AboutUS1.aspx" />
     <Content Include="AboutUs2.aspx" />
     <Content Include="contactUs.aspx" />
+    <Content Include="Delete.aspx" />
     <Content Include="DeleteAccount.aspx" />
     <Content Include="home2.aspx" />
     <Content Include="images\Screenshot 2025-11-25 130328.png" />
@@ -137,6 +138,13 @@
     </Compile>
     <Compile Include="contactUs.aspx.designer.cs">
       <DependentUpon>contactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
     </Compile>
     <Compile Include="DeleteAccount.aspx.cs">
       <DependentUpon>DeleteAccount.aspx</DependentUpon>

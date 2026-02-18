@@ -31,7 +31,7 @@ protected void Page_Load(object sender, EventArgs e)
             string userEmail = Session["uEmail"] as string;
             Users user = seserv.SelectUserByEmail(userEmail);
 
-            this. = user.Email;
+            this.uemail = user.Email;
             this.Fnam.Text = user.Fname;
             this.txtLastname.Text = user.Lname;
             this.txtPassword.Text = user.Upassword;

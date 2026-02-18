@@ -1,9 +1,11 @@
-﻿<%@ Page Title="Delete Account" Language="C#" MasterPageFile="~/Site2.Master"
-    AutoEventWireup="true" CodeBehind="DeLaccount.aspx.cs"
-    Inherits="Sally_sPerfumeClients.DeLaccount" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site2.Master" AutoEventWireup="true" CodeBehind="Delete.aspx.cs" Inherits="FootLocker.Delete" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+
+    
     <div style="width:450px; margin:60px auto; padding:20px; border:1px solid gray;">
 
         <h2>Delete Account</h2>
@@ -42,5 +44,4 @@
         <asp:Label ID="lblMsg" runat="server" ForeColor="Blue"></asp:Label>
 
     </div>
-
 </asp:Content>

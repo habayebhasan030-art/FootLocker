@@ -142,10 +142,7 @@ body{
 
     <br />
 
-    <asp:Button ID="btnSubmit" runat="server"
-        Text="Send Message"
-        CssClass="btn-submit"
-        OnClick="btnSubmit_Click" />
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
 
     <asp:Label ID="lblMessage" runat="server" CssClass="lblMessage"></asp:Label>
 

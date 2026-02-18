@@ -13,7 +13,7 @@ namespace FootLocker
         Service1Client seserv = new Service1Client();
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["uEmail"] == null)
+            if (Session["Uemail"] == null)
             {
                 Response.Redirect("~/Home.aspx");
             }
@@ -27,16 +27,19 @@ namespace FootLocker
 
         private void ShowUserData()
         {
-            string userEmail = Session["Email"] as string;
+            string userEmail = Session["Uemail"] as string;
             Users user = seserv.SelectUserByEmail(userEmail);
             this.txtEmail.Text = user.UEmail;
             this.txtFirstName.Text = user.FName;
             this.txtLastName.Text = user.LName;
         }
 
-        protected void btnSubmit_Click(object sender, EventArgs e)
+    
+
+        protected void Button1_Click(object sender, EventArgs e)
         {
-            string userEmail = Session["Email"] as string;
+
+            string userEmail = Session["Uemail"] as string;
             Users user = seserv.SelectUserByEmail(userEmail);
             Mailbox m = new Mailbox();
 
@@ -59,5 +62,5 @@ namespace FootLocker
                 this.lblMessage.Text = "Your message has been sent.";
             }
         }
+        }
     }
-}

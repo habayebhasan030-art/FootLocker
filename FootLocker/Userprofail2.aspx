@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="Update Profile" Language="C#" MasterPageFile="~/Site2.Master"
-    AutoEventWireup="true" CodeBehind="UpdateUser.aspx.cs"
+    AutoEventWireup="true" CodeBehind="Userprofail2.aspx.cs"
     Inherits="FootLocker.UpdateUser" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
