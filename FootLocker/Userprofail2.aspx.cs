@@ -40,7 +40,7 @@ protected void Page_Load(object sender, EventArgs e)
 
         protected void btnUpdate_Click(object sender, EventArgs e)
         {
-            Users user = service.SelectUserByEmail(Session["uEmail"] as string);
+            Users user = seserv.SelectUserByEmail(Session["uEmail"] as string);
 
             user.Fname = this.txtFirstname.Text;
             user.Lname = this.txtLastname.Text;
@@ -54,7 +54,7 @@ protected void Page_Load(object sender, EventArgs e)
             }
             else
             {
-                this.lblInfo.Text = "updat failed";
+                this.lblMsg.Text = "updat failed";
             }
         }
 

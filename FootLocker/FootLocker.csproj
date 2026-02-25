@@ -279,6 +279,8 @@
       <SubType>Designer</SubType>
     </None>
     <Content Include="Master.Master" />
+    <Content Include="images\U90606TO_2.webp" />
+    <Content Include="images\pic1" />
     <None Include="packages.config" />
     <Content Include="Site1.Master" />
     <Content Include="Site2.Master" />
